@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		      <link rel="stylesheet" href="css/bootstrap.min.css" />
+		        <link rel="stylesheet" href="css/style.css" />
+              <script src="sss/sss.min.js"></script>
+               <meta charset="UTF-8">
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    </head>
+    <body>
+      <div class="wrapper" id="top">
+        <div class="navwrapper">
+          <nav class="navbar navbar-default">
+            <div class="container  container-fluid" >
+              <div class="navbar-header ">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">IndividualSites</a>
+              </div>
+
+               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#"> Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="about.html">About</a></li>
+                      <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="jumbotron">
+            <div class="container">
+              <div class="backtstr" id = "kek">
+                <script>
+                  $.backstretch([
+                    "resources/image1.jpg",
+                    "resources/image2.jpg",
+                    "resources/image3.jpg"
+                  ],
+                  {duration: 3000, fade: 750});
+              </script>
+            </div>
+            <p>
+            Here at Individualsites we provide professional responsive web desgin.
+            </p>
+
+            <div class="jumbobutton">
+              <a href="contact.html" class="btn btn-primary btn-lg" target="blank"> Contact us now to get your free quote for your website</a>
+            </div>
+          </div>
+        </div>
+        <br/>
+
+          <div class="footerstyling">
+            <div class="container">
+              <footer id="copyrighticon">
+                <div class="pagetop">
+                  <a href="#top"> Top</a>
+                </div>
+                <div class = "joshicon">
+                  <a href="#copyrighticon">&copy; Joshua Cassidy 2016</a>
+                </div>
+                </footer>
+            </div>
+          </div>
+        </div>
+
+    <script>
+      $("body").fadeOut();
+        $("body").fadeIn();
+    </script>
+    <script src="js/src.js"> </script>
+      <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  	    <script src="js/bootstrap.js"></script>
+        <script src="js/scroll.js"> </script>
+
+
+      </body>
+  </html>

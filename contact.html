@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+    <meta charset="utf-8">
+      <title>Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+      <div class="navwrapper" id="top">
+       <nav class="navbar navbar-default">
+         <div class="container  container-fluid">
+           <div class="navbar-header">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+             </button>
+             <a class="navbar-brand" href="#">IndividualSites</a>
+           </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <ul class="nav navbar-nav">
+               <li><a href="index.html">Home</a></li>
+                 <li><a href="about.html">About</a></li>
+                   <li><a href="services.html">Services</a></li>
+                     <li class="active"><a href="contact.html"> Contact <span class="sr-only">(current)</span></a></li>
+             </ul>
+           </div>
+         </div>
+       </nav>
+     </div>
+
+    <div class="contentwrappaer ">
+      <div class="forms ">
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-4  topcontact contactborderstylesleft  ">
+              <div class="contentwrapper">
+                <h2>Address</h2>
+                  <img src="resources/Location.png" alt="1" />
+                    <p class="contactstyle"><a href="#map"> LittleField, Hearse road, Donabate, North County Dublin </a> </p>
+              </div>
+            </div>
+
+            <div class="col-md-4  ">
+              <div class="contentwrapper">
+                <h2>Phone</h2>
+                  <a onclick=phone(); href="tel:+35381880578">
+                    <img src="resources/Phone.png" alt="2" />
+                  </a>
+                  <p class="contactstyle">Feel free to contact us at any stage throughout the day for a free consultation at <a onclick=phone(); href="tel:+35381880578">+35381880578.</a>
+                  </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 bottomcontact  contactborderstylesright">
+              <div class="contentwrapper borderstylesleft  toprightstyle">
+                <h2>Email</h2>
+                  <a onclick=email(); href="mailto:x15378586@student.ncirl.ie">
+                    <img src="resources/Message.png" alt="3" />  </a>
+                    <p class="contactstyle">  Or if you can't talk to us on the phone, email us and we will contact you within 24 hours and we can arrange a free consultation at
+                     <a onclick=email(); href="mailto:x15378586@student.ncirl.ie" target="_top">Joshcassidy79@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script>
+        $("body").fadeOut();
+          $("body").fadeIn();
+      </script>
+
+        <div class="wrapper">
+          <div class="contentwrapper">
+            <div class="container ">
+              <div class="formwrapper">
+                <div class="abouttext">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="container">
+                        <div class="formmain">
+                          <div class="contactform">
+                            <h2>Or drop us a quick message</h2>
+                              <form>
+                                <hr>
+                                  <label for="name">Name:</label>
+                                    <div class="form-group fields">
+                                      <input type="text" name="name" class="form-control" placeholder="Your name here."
+                                    </div>
+                                    <label for="email">Email:</label>
+                                      <div class="form-group fields">
+                                        <input type="email" name="email" class="form-control" placeholder="Your email here.">
+                                      </div>
+                                          <div class= "message">
+                                            <label for="message">Message:</label>
+                                              <div class="form-group" >
+                                                <input type="text" name="message" id = message class="form-control" placeholder="Your message here.">
+                                              </div>
+                                              <div class="submitbutton">
+                                                <a href="#" class="btn btn-primary btn-lg formbutton" type = "submit"> <h4>Submit</h4></a>
+                                              </div>
+                                          </div>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                            <div class="col-md-6">
+                                <div id="map" style="width:100%;height:700px">
+                                  <script>
+                                      function myMap() {
+                                        var mapCanvas = document.getElementById("map");
+                                          var mapOptions = {
+                                            center: new google.maps.LatLng(53.5565677,-6.2035644),
+                                              zoom: 11
+                                          };
+                                          var map = new google.maps.Map(mapCanvas, mapOptions);
+                                        }
+                                        </script>
+                                        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  <div class="footerstyling">
+                    <div class="container">
+                      <footer id="copyrighticon">
+                        <div class="pagetop">
+                          <a href="#top"> Top</a>
+                        </div>
+                      <div class = "joshicon">
+                        <a href="#copyrighticon">&copy; Joshua Cassidy 2016</a>
+                      </div>
+                     </footer>
+                    </div>
+                  </div>
+
+              <script src="js/src.js"> </script>
+                <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+                  <script src="js/bootstrap.js"></script>
+                    <script src="js/scroll.js"> </script>
+                      <script src="js/contact.js"> </script>
+            </body>
+        </html>
